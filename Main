@@ -1,0 +1,407 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ForgottenMemories = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Side = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local ESPPlayerButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ESPAnimatronicsButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local GotoSecurityOfficeButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local GotoGenerator1Button = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local GotoGenerator2Button = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local GotoArcadeButton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local ExitTextLabel = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local BringMarionetteInteractButton = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ForgottenMemories.Name = "Forgotten Memories 🍕"
+ForgottenMemories.Parent = game.CoreGui
+ForgottenMemories.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ForgottenMemories.DisplayOrder = 999999999
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ForgottenMemories
+MainFrame.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+MainFrame.BackgroundTransparency = 0.300
+MainFrame.Position = UDim2.new(0.379331648, 0, 0.360292554, 0)
+MainFrame.Size = UDim2.new(0.224382192, 0, 0.313471913, 0)
+
+UICorner.CornerRadius = UDim.new(0.0199999996, 0)
+UICorner.Parent = MainFrame
+
+Side.Name = "Side"
+Side.Parent = MainFrame
+Side.BackgroundColor3 = Color3.fromRGB(36, 36, 62)
+Side.Position = UDim2.new(0.930728197, 0, 0, 0)
+Side.Size = UDim2.new(0.0656530261, 0, 0.99799782, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.219999999, 0)
+UICorner_2.Parent = Side
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0.930728197, 0, 0.0897869766, 0)
+Title.Font = Enum.Font.Sarpanch
+Title.Text = "Forgotten Memories"
+Title.TextColor3 = Color3.fromRGB(140, 140, 140)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+ESPPlayerButton.Name = "ESPPlayerButton"
+ESPPlayerButton.Parent = MainFrame
+ESPPlayerButton.BackgroundColor3 = Color3.fromRGB(36, 36, 62)
+ESPPlayerButton.BackgroundTransparency = 0.500
+ESPPlayerButton.Position = UDim2.new(0.0231716558, 0, 0.137321264, 0)
+ESPPlayerButton.Size = UDim2.new(0.884384871, 0, 0.0897869766, 0)
+ESPPlayerButton.Modal = true
+ESPPlayerButton.Font = Enum.Font.Sarpanch
+ESPPlayerButton.Text = "ESP Player"
+ESPPlayerButton.TextColor3 = Color3.fromRGB(121, 121, 121)
+ESPPlayerButton.TextScaled = true
+ESPPlayerButton.TextSize = 14.000
+ESPPlayerButton.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_3.Parent = ESPPlayerButton
+
+ESPAnimatronicsButton.Name = "ESPAnimatronicsButton"
+ESPAnimatronicsButton.Parent = MainFrame
+ESPAnimatronicsButton.BackgroundColor3 = Color3.fromRGB(36, 36, 62)
+ESPAnimatronicsButton.BackgroundTransparency = 0.500
+ESPAnimatronicsButton.Position = UDim2.new(0.0231716558, 0, 0.264079332, 0)
+ESPAnimatronicsButton.Size = UDim2.new(0.884384871, 0, 0.0897869766, 0)
+ESPAnimatronicsButton.Font = Enum.Font.Sarpanch
+ESPAnimatronicsButton.Text = "ESP Animatronics"
+ESPAnimatronicsButton.TextColor3 = Color3.fromRGB(121, 121, 121)
+ESPAnimatronicsButton.TextScaled = true
+ESPAnimatronicsButton.TextSize = 14.000
+ESPAnimatronicsButton.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_4.Parent = ESPAnimatronicsButton
+
+GotoSecurityOfficeButton.Name = "GotoSecurityOfficeButton"
+GotoSecurityOfficeButton.Parent = MainFrame
+GotoSecurityOfficeButton.BackgroundColor3 = Color3.fromRGB(36, 36, 62)
+GotoSecurityOfficeButton.BackgroundTransparency = 0.500
+GotoSecurityOfficeButton.Position = UDim2.new(0.0231716558, 0, 0.385555834, 0)
+GotoSecurityOfficeButton.Size = UDim2.new(0.884384871, 0, 0.0897869766, 0)
+GotoSecurityOfficeButton.Font = Enum.Font.Sarpanch
+GotoSecurityOfficeButton.Text = "TP Security Office"
+GotoSecurityOfficeButton.TextColor3 = Color3.fromRGB(121, 121, 121)
+GotoSecurityOfficeButton.TextScaled = true
+GotoSecurityOfficeButton.TextSize = 14.000
+GotoSecurityOfficeButton.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_5.Parent = GotoSecurityOfficeButton
+
+GotoGenerator1Button.Name = "GotoGenerator1Button"
+GotoGenerator1Button.Parent = MainFrame
+GotoGenerator1Button.BackgroundColor3 = Color3.fromRGB(36, 36, 62)
+GotoGenerator1Button.BackgroundTransparency = 0.500
+GotoGenerator1Button.Position = UDim2.new(0.0231716558, 0, 0.507032335, 0)
+GotoGenerator1Button.Size = UDim2.new(0.884384871, 0, 0.0897869766, 0)
+GotoGenerator1Button.Font = Enum.Font.Sarpanch
+GotoGenerator1Button.Text = "TP Generator 1 Office"
+GotoGenerator1Button.TextColor3 = Color3.fromRGB(121, 121, 121)
+GotoGenerator1Button.TextScaled = true
+GotoGenerator1Button.TextSize = 14.000
+GotoGenerator1Button.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_6.Parent = GotoGenerator1Button
+
+GotoGenerator2Button.Name = "GotoGenerator2Button"
+GotoGenerator2Button.Parent = MainFrame
+GotoGenerator2Button.BackgroundColor3 = Color3.fromRGB(36, 36, 62)
+GotoGenerator2Button.BackgroundTransparency = 0.500
+GotoGenerator2Button.Position = UDim2.new(0.0231716558, 0, 0.623227239, 0)
+GotoGenerator2Button.Size = UDim2.new(0.884384871, 0, 0.0897869766, 0)
+GotoGenerator2Button.Font = Enum.Font.Sarpanch
+GotoGenerator2Button.Text = "TP Generator 2 Office"
+GotoGenerator2Button.TextColor3 = Color3.fromRGB(121, 121, 121)
+GotoGenerator2Button.TextScaled = true
+GotoGenerator2Button.TextSize = 14.000
+GotoGenerator2Button.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_7.Parent = GotoGenerator2Button
+
+GotoArcadeButton.Name = "GotoArcadeButton"
+GotoArcadeButton.Parent = MainFrame
+GotoArcadeButton.BackgroundColor3 = Color3.fromRGB(36, 36, 62)
+GotoArcadeButton.BackgroundTransparency = 0.500
+GotoArcadeButton.Position = UDim2.new(0.0231716558, 0, 0.74470377, 0)
+GotoArcadeButton.Size = UDim2.new(0.884384871, 0, 0.0897869766, 0)
+GotoArcadeButton.Font = Enum.Font.Sarpanch
+GotoArcadeButton.Text = "TP Arcade"
+GotoArcadeButton.TextColor3 = Color3.fromRGB(121, 121, 121)
+GotoArcadeButton.TextScaled = true
+GotoArcadeButton.TextSize = 14.000
+GotoArcadeButton.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_8.Parent = GotoArcadeButton
+
+ExitTextLabel.Name = "ExitTextLabel"
+ExitTextLabel.Parent = MainFrame
+ExitTextLabel.BackgroundColor3 = Color3.fromRGB(36, 36, 62)
+ExitTextLabel.BackgroundTransparency = 1.000
+ExitTextLabel.Position = UDim2.new(1.02727675, 0, 0, 0)
+ExitTextLabel.Size = UDim2.new(0, 0, 0.0897869766, 0)
+ExitTextLabel.Font = Enum.Font.Sarpanch
+ExitTextLabel.Text = "Press \"K\" to exit."
+ExitTextLabel.TextColor3 = Color3.fromRGB(124, 124, 124)
+ExitTextLabel.TextScaled = true
+ExitTextLabel.TextSize = 14.000
+ExitTextLabel.TextTransparency = 1.000
+ExitTextLabel.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0.189999998, 0)
+UICorner_9.Parent = ExitTextLabel
+
+BringMarionetteInteractButton.Name = "BringMarionetteInteractButton"
+BringMarionetteInteractButton.Parent = MainFrame
+BringMarionetteInteractButton.BackgroundColor3 = Color3.fromRGB(36, 36, 62)
+BringMarionetteInteractButton.BackgroundTransparency = 0.500
+BringMarionetteInteractButton.Position = UDim2.new(0.0231716558, 0, 0.866180241, 0)
+BringMarionetteInteractButton.Size = UDim2.new(0.884384871, 0, 0.0897869766, 0)
+BringMarionetteInteractButton.Font = Enum.Font.Sarpanch
+BringMarionetteInteractButton.Text = "Bring Marionette Curtain"
+BringMarionetteInteractButton.TextColor3 = Color3.fromRGB(121, 121, 121)
+BringMarionetteInteractButton.TextScaled = true
+BringMarionetteInteractButton.TextSize = 14.000
+BringMarionetteInteractButton.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_10.Parent = BringMarionetteInteractButton
+
+UIAspectRatioConstraint.Parent = MainFrame
+UIAspectRatioConstraint.AspectRatio = 1.368
+
+-- Scripts:
+
+local function BSZMS_fake_script() -- ForgottenMemories.Main 
+	local script = Instance.new('LocalScript', ForgottenMemories)
+
+	local ScreenGUI = script.Parent
+	local MainFrame = ScreenGUI.MainFrame
+	local Side = MainFrame.Side
+	local ESPPLayer = MainFrame.ESPPlayerButton
+	local ESPAnimatronics = MainFrame.ESPAnimatronicsButton
+	local GotoArcade = MainFrame.GotoArcadeButton
+	local GotoGenerator1 = MainFrame.GotoGenerator1Button
+	local GotoGenerator2 = MainFrame.GotoGenerator2Button
+	local GotoSecurityOffice = MainFrame.GotoSecurityOfficeButton
+	local ExitTextLabel = MainFrame.ExitTextLabel
+	local BringMarionetteInteract = MainFrame.BringMarionetteInteractButton
+	local OriginalPosition = game.Workspace.WorkspaceUtilities.Curtains.InteractPart.CFrame
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local RunService = game:GetService("RunService")
+	local ESPPlayerBool = false
+	local ESPAnimatronicsBool = false
+	local MarionetteinteractBool = false
+	local Enter= false
+	UserInputService.InputBegan:Connect(function(input, chs)
+		if not chs then
+			if input.KeyCode == Enum.KeyCode.K then
+				if Enter == false then
+					Enter = true
+					MainFrame.Visible = false
+				else
+					Enter = false
+					MainFrame.Visible = true
+				end
+			end
+		end
+	end)
+	BringMarionetteInteract.MouseButton1Click:Connect(function()
+		if MarionetteinteractBool == false then
+			MarionetteinteractBool = true
+		else
+			MarionetteinteractBool = false
+		end
+	end)
+	MainFrame.MouseEnter:Connect(function()
+		TweenService:Create(ExitTextLabel, TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+			Size = UDim2.new(0.726, 0,0.101, 0);
+			BackgroundTransparency = 0;
+			TextTransparency = 0;
+		}):Play()
+	end)
+	MainFrame.MouseLeave:Connect(function()
+		TweenService:Create(ExitTextLabel, TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+			Size = UDim2.new(0, 0,0.101, 0);
+			BackgroundTransparency = 1;
+			TextTransparency = 1;
+		}):Play()
+	end)
+	ESPPLayer.MouseButton1Click:Connect(function()
+		if ESPPlayerBool == false then
+			ESPPlayerBool = true
+		else
+			ESPPlayerBool = false
+		end
+	end)
+	ESPAnimatronics.MouseButton1Click:Connect(function()
+		if ESPAnimatronicsBool == false then
+			ESPAnimatronicsBool = true
+		else
+			ESPAnimatronicsBool = false
+		end
+	end)
+	GotoArcade.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-274.623749, 4.02500057, -316.107574, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end)
+	GotoGenerator1.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-395.288727, 4.05000019, -11.1899109, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+	end)
+	GotoGenerator2.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-383.383972, 4.05000019, -48.2902222, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+	end)
+	GotoSecurityOffice.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-79.1113052, 3.98608541, -150.104309, 0, 0, 0.999999583, 0, 1, 0, -1, 0, 0)
+	end)
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if MarionetteinteractBool == true then
+			local interact = game.Workspace.WorkspaceUtilities.Curtains.InteractPart
+			interact.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, -1.5)
+			TweenService:Create(interact, TweenInfo.new(0, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0), {
+				CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, -1.5)
+			}):Play()
+		else
+			local interact = game.Workspace.WorkspaceUtilities.Curtains.InteractPart
+			interact.CFrame = OriginalPosition
+		end
+	end)
+	while true do tick() wait(1)
+		if ESPPlayerBool == true then
+			coroutine.resume(coroutine.create(function()
+				for i,v in pairs(game.Players:GetPlayers()) do
+					local Character = v.Character
+					local HumanoidRootPart = Character.HumanoidRootPart
+					local Head = Character.Head
+					if v.Name == game.Players.LocalPlayer.Name then
+					else
+						local BoxHandleAdornment = Instance.new("BoxHandleAdornment", Head)
+						BoxHandleAdornment.Name = Head.Name.."_espBox"
+						BoxHandleAdornment.Adornee = Head
+						BoxHandleAdornment.Size = Head.Size
+						BoxHandleAdornment.AlwaysOnTop = true
+						BoxHandleAdornment.ZIndex = 0
+						BoxHandleAdornment.Visible = true
+						local BillboardGui = Instance.new("BillboardGui")
+						local TextLabel = Instance.new("TextLabel")
+						local UICorner = Instance.new("UICorner")
+	
+						BillboardGui.Parent = HumanoidRootPart
+						BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+						BillboardGui.Active = true
+						BillboardGui.AlwaysOnTop = true
+						BillboardGui.LightInfluence = 1.000
+						BillboardGui.Size = UDim2.new(2, 50, 2, 10)
+	
+						TextLabel.Parent = BillboardGui
+						TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						TextLabel.BackgroundTransparency = 0.500
+						TextLabel.Size = UDim2.new(1, 0, 1, 0)
+						TextLabel.Font = Enum.Font.Sarpanch
+						TextLabel.Text = Character.Name
+						TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+						TextLabel.TextScaled = true
+						TextLabel.TextSize = 14.000
+						TextLabel.TextWrapped = true
+	
+						UICorner.CornerRadius = UDim.new(500, 500)
+						UICorner.Parent = TextLabel
+						coroutine.resume(coroutine.create(function()
+							wait(1)
+							BillboardGui:Destroy()
+							BoxHandleAdornment:Destroy()
+						end))
+					end
+				end
+			end))
+		end;if ESPAnimatronicsBool == true then
+			coroutine.resume(coroutine.create(function()
+				for i,v in pairs(workspace:GetChildren()) do
+					if v:IsA("Model") then
+						if v:FindFirstChild("Humanoid") then
+							for i2,v2 in pairs(game.Players:GetPlayers()) do
+								if v.Name == v2.Name then
+								else
+									
+									local Character = v
+									local Humanoid = Character.Humanoid
+									local HumanoidRootPart = Humanoid.RootPart
+									local Head = Character.Head
+									
+									local BoxHandleAdornment = Instance.new("BoxHandleAdornment", Head)
+									BoxHandleAdornment.Name = Head.Name.."_espBox"
+									BoxHandleAdornment.Adornee = Head
+									BoxHandleAdornment.Size = Head.Size
+									BoxHandleAdornment.AlwaysOnTop = true
+									BoxHandleAdornment.ZIndex = 0
+									BoxHandleAdornment.Visible = true
+									
+									local BillboardGui = Instance.new("BillboardGui")
+									local TextLabel = Instance.new("TextLabel")
+									local UICorner = Instance.new("UICorner")
+	
+									BillboardGui.Parent = HumanoidRootPart
+									BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+									BillboardGui.Active = true
+									BillboardGui.AlwaysOnTop = true
+									BillboardGui.LightInfluence = 1.000
+									BillboardGui.Size = UDim2.new(2, 50, 2, 10)
+	
+									TextLabel.Parent = BillboardGui
+									TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+									TextLabel.BackgroundTransparency = 0.500
+									TextLabel.Size = UDim2.new(1, 0, 1, 0)
+									TextLabel.Font = Enum.Font.Sarpanch
+									TextLabel.Text = Character.Name
+									TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+									TextLabel.TextScaled = true
+									TextLabel.TextSize = 14.000
+									TextLabel.TextWrapped = true
+	
+									UICorner.CornerRadius = UDim.new(500, 500)
+									UICorner.Parent = TextLabel
+									
+									coroutine.resume(coroutine.create(function()
+										wait(1)
+										BillboardGui:Destroy()
+										BoxHandleAdornment:Destroy()
+									end))
+									
+								end
+							end
+						end
+					end
+				end
+			end))
+		end
+	end
+end
+coroutine.wrap(BSZMS_fake_script)()
