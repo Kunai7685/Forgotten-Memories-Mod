@@ -294,7 +294,7 @@ local function YOBCIM_fake_script() -- ForgottenMemories.Main
 			interact.CFrame = OriginalPosition
 		end
 		coroutine.resume(coroutine.create(function()
-			for i,v in pairs(game.Players:GetPlayers()) do game:GetService("RunService").RenderStepped:Wait()
+			for i,v in pairs(game.Players:GetPlayers()) do
 				local Character = v.Character
 				local HumanoidRootPart = Character.HumanoidRootPart
 				local Head = Character.Head
