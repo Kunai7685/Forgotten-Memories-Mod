@@ -293,6 +293,19 @@ local function YOBCIM_fake_script() -- ForgottenMemories.Main
 			local interact = game.Workspace.WorkspaceUtilities.Curtains.InteractPart
 			interact.CFrame = OriginalPosition
 		end
+		coroutine.resume(coroutine.create(function()
+			for i,v in pairs(game.Players:GetPlayers()) do game:GetService("RunService").RenderStepped:Wait()
+				local Character = v.Character
+				local HumanoidRootPart = Character.HumanoidRootPart
+				local Head = Character.Head
+				if Head:FindFirstChild(Head.Name.."_espBox") then
+					Head:FindFirstChild(Head.Name.."_espBox"):Destroy()
+				end
+				if HumanoidRootPart:FindFirstChild("BillboardGui") then
+					HumanoidRootPart:FindFirstChild("BillboardGui"):Destroy()
+				end
+			end
+		end))
 	end)
 	while true do tick() wait(1)
 		if ESPPlayerBool == true and ESPAnimatronicsBool == true then
@@ -456,18 +469,6 @@ local function YOBCIM_fake_script() -- ForgottenMemories.Main
 					end
 				end
 			end))
-			wait()
-			for i,v in pairs(game.Players:GetPlayers()) do
-				local Character = v.Character
-				local HumanoidRootPart = Character.HumanoidRootPart
-				local Head = Character.Head
-				if Head:FindFirstChild(Head.Name.."_espBox") then
-					Head:FindFirstChild(Head.Name.."_espBox"):Destroy()
-				end
-				if HumanoidRootPart:FindFirstChild("BillboardGui") then
-					HumanoidRootPart:FindFirstChild("BillboardGui"):Destroy()
-				end
-			end
 		end
 	end
 end
