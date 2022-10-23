@@ -301,8 +301,8 @@ local function YOBCIM_fake_script() -- ForgottenMemories.Main
 				if Head:FindFirstChild(Head.Name.."_espBox") then
 					Head:FindFirstChild(Head.Name.."_espBox"):Destroy()
 				end
-				if HumanoidRootPart:FindFirstChild("BillboardGui") then
-					HumanoidRootPart:FindFirstChild("BillboardGui"):Destroy()
+				if HumanoidRootPart:FindFirstChild("billneck") then
+					HumanoidRootPart:FindFirstChild("billneck"):Destroy()
 				end
 			end
 		end))
@@ -326,7 +326,7 @@ local function YOBCIM_fake_script() -- ForgottenMemories.Main
 						local BillboardGui = Instance.new("BillboardGui")
 						local TextLabel = Instance.new("TextLabel")
 						local UICorner = Instance.new("UICorner")
-	
+						
 						BillboardGui.Parent = HumanoidRootPart
 						BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 						BillboardGui.Active = true
@@ -376,7 +376,8 @@ local function YOBCIM_fake_script() -- ForgottenMemories.Main
 							local BillboardGui = Instance.new("BillboardGui")
 							local TextLabel = Instance.new("TextLabel")
 							local UICorner = Instance.new("UICorner")
-	
+							
+							BillboardGui.Name = "billneck"
 							BillboardGui.Parent = HumanoidRootPart
 							BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 							BillboardGui.Active = true
